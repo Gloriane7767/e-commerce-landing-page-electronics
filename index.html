@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Product Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+<!-- HEADER -->
+<header class="fixed top-0 left-0 w-full bg-cyan-800 text-white shadow z-50">
+    <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+
+        <!-- Logo -->
+        <div class="flex items-center space-x-3">
+            <!-- Avatar-style Icon -->
+            <div class="h-9 w-9 rounded-full bg-indigo-500 flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <circle cx="12" cy="8" r="4" stroke-width="2"/>
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 20c2-4 6-6 8-6s6 2 8 6"/>
+                </svg>
+            </div>
+            <span class="text-xl font-semibold tracking-wide">GloMobile</span>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="hidden md:flex items-center space-x-8 text-sm font-medium">
+            <a href="#" class="hover:text-indigo-400 transition">Home</a>
+            <a href="#" class="hover:text-indigo-400 transition">Shop</a>
+            <a href="#" class="hover:text-indigo-400 transition">Features</a>
+            <a href="#" class="hover:text-indigo-400 transition">Reviews</a>
+            <a href="#" class="hover:text-indigo-400 transition">Blog</a>
+            <a href="#" class="hover:text-indigo-400 transition">Contact</a>
+        </nav>
+
+        <!-- Right Controls -->
+        <div class="flex items-center space-x-4">
+
+            <!-- Cart Icon -->
+            <button class="relative p-2 rounded-full bg-indigo-500 hover:bg-slate-700 transition">
+                <!-- Cart Icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13l-1.5 7h13M7 13L5.4 5M10 21a1 1 0 100-2 1 1 0 000 2zm8 0a1 1 0 100-2 1 1 0 000 2z"/>
+                </svg>
+                <span class="absolute -top-1 -right-1 bg-indigo-500 text-xs text-white px-1.5 rounded-full">2</span>
+            </button>
+
+            <!-- Hamburger Menu -->
+            <button class="md:hidden p-2 rounded-lg bg-slate-800 hover:bg-slate-700 transition">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+            </button>
+
+        </div>
+
+    </div>
+</header>
+
+<main class="max-w-7xl mx-auto p-4 space-y-12">
+
+    <!-- HERO -->
+    <section class="max-w-7xl mx-auto px-6 pt-28 pb-16">
+        <div class="grid md:grid-cols-2 gap-10 items-center">
+
+            <!-- Left Content -->
+            <div class="space-y-6 animate-fade-in">
+      <span class="inline-block bg-purple-600 text-white text-xs px-3 py-1 rounded-full">
+        Best Seller
+      </span>
+
+                <h1 class="text-4xl md:text-5xl font-bold leading-tight text-gray-900">
+                    Upgrade Your Style Today
+                </h1>
+
+                <p class="text-gray-600 text-lg">
+                    Discover premium quality products designed to elevate your everyday lifestyle.
+                    Modern, minimal, and built for comfort and performance.
+                </p>
+
+                <button class="bg-[#FB7701] text-white px-8 py-3 rounded-lg shadow hover:bg-[#e56600] transition transform hover:scale-105">
+                    Buy Now
+                </button>
+            </div>
+
+            <!-- Right Image -->
+            <div class="relative animate-slide-in">
+                <img
+                        src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=1000&auto=format&fit=crop"
+                        alt="Product Image"
+                        class="w-full h-[400px] object-cover rounded-xl shadow-lg"
+                />
+
+                <!-- Badge -->
+                <span class="absolute top-4 right-4 bg-purple-600 text-white text-xs px-3 py-1 rounded-full">
+        Limited Offer
+      </span>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="bg-white p-8 rounded-lg shadow">
+        <h2 class="text-2xl font-semibold mb-6 text-center">Featured Products</h2>
+
+        <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+
+            <!-- Product 1 -->
+            <div class="bg-gray-100 p-4 rounded relative hover:shadow-lg transition text-center">
+                <button class="absolute top-3 right-3 text-gray-400 hover:text-red-500">❤</button>
+
+                <img
+                        src="https://images.unsplash.com/photo-1760708825913-65a50b3dc39b?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="Power Bank Charging Phone"
+                        class="w-full h-40 object-cover rounded">
+
+                <h3 class="font-semibold mt-3">Portable Power Bank</h3>
+
+                <p class="text-sm text-gray-500">
+                    10,000mAh fast‑charging portable battery pack
+                </p>
+
+                <div class="flex flex-col items-center mt-3 space-y-2 text-center">
+                    <span class="text-black font-bold text-lg">$29.99</span>
+                    <button class="bg-orange-500 text-white px-5 py-1 rounded hover:bg-orange-600 transition">
+                        Buy Now
+                    </button>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="bg-gray-100 p-4 rounded relative hover:shadow-lg transition text-center">
+                <button class="absolute top-3 right-3 text-gray-400 hover:text-red-500">❤</button>
+
+                <img
+                        src="https://images.pexels.com/photos/10104285/pexels-photo-10104285.jpeg?auto=compress&cs=tinysrgb&w=600"
+                        alt="Power Bank on Smartphone"
+                        class="w-full h-40 object-cover rounded">
+
+                <h3 class="font-semibold mt-3">Sleek Powerbank Combo</h3>
+
+                <p class="text-sm text-gray-500">
+                    Premium minimalist power bank with smartphone
+                </p>
+
+                <div class="flex flex-col items-center mt-3 space-y-2 text-center">
+                    <span class="text-black font-bold text-lg">$34.99</span>
+                    <button class="bg-orange-500 text-white px-5 py-1 rounded hover:bg-orange-600 transition">
+                        Buy Now
+                    </button>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="bg-gray-100 p-4 rounded relative hover:shadow-lg transition text-center">
+                <button class="absolute top-3 right-3 text-gray-400 hover:text-red-500">❤</button>
+
+                <img
+                        src="https://images.unsplash.com/photo-1756575681817-e497cb0a5cec?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="Mobile Phone Accessories"
+                        class="w-full h-40 object-cover rounded">
+
+                <h3 class="font-semibold mt-3">Mobile Accessories Set</h3>
+
+                <p class="text-sm text-gray-500">
+                    Phone case, charger, and cable bundle
+                </p>
+
+                <div class="flex flex-col items-center mt-3 space-y-2 text-center">
+                    <span class="text-black font-bold text-lg">$49.99</span>
+                    <button class="bg-orange-500 text-white px-5 py-1 rounded hover:bg-orange-600 transition">
+                        Buy Now
+                    </button>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="bg-gray-100 p-4 rounded relative hover:shadow-lg transition text-center">
+                <button class="absolute top-3 right-3 text-gray-400 hover:text-red-500">❤</button>
+
+                <img
+                        src="https://images.unsplash.com/photo-1752832902114-825ca9c530d7?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="Smartphones and Charger"
+                        class="w-full h-40 object-cover rounded">
+
+                <h3 class="font-semibold mt-3">Smartphone & Charger</h3>
+
+                <p class="text-sm text-gray-500">
+                    Dual smartphone charger and cable
+                </p>
+
+                <div class="flex flex-col items-center mt-3 space-y-2 text-center">
+                    <span class="text-black font-bold text-lg">$69.99</span>
+                    <button class="bg-orange-500 text-white px-5 py-1 rounded hover:bg-orange-600 transition">
+                        Buy Now
+                    </button>
+                </div>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="bg-gray-100 p-4 rounded relative hover:shadow-lg transition text-center">
+                <button class="absolute top-3 right-3 text-gray-400 hover:text-red-500">❤</button>
+
+                <img
+                        src="https://images.unsplash.com/photo-1706275399494-fb26bbc5da63?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="Phone Accessories Pack"
+                        class="w-full h-40 object-cover rounded">
+
+                <h3 class="font-semibold mt-3">Accessory Pack Plus</h3>
+
+                <p class="text-sm text-gray-500">
+                    Essential accessories for everyday use
+                </p>
+
+                <div class="flex flex-col items-center mt-3 space-y-2 text-center">
+                    <span class="text-black font-bold text-lg">$39.99</span>
+                    <button class="bg-orange-500 text-white px-5 py-1 rounded hover:bg-orange-600 transition">
+                        Buy Now
+                    </button>
+                </div>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="bg-gray-100 p-4 rounded relative hover:shadow-lg transition text-center">
+                <button class="absolute top-3 right-3 text-gray-400 hover:text-red-500">❤</button>
+
+                <img
+                        src="https://images.unsplash.com/photo-1729338973453-484e67df7c89?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="Phone Connected to Power Bank"
+                        class="w-full h-40 object-cover rounded">
+
+                <h3 class="font-semibold mt-3">Power Setup Bundle</h3>
+
+                <p class="text-sm text-gray-500">
+                    Phone + power bank combo for travel
+                </p>
+
+                <div class="flex flex-col items-center mt-3 space-y-2 text-center">
+                    <span class="text-black font-bold text-lg">$59.99</span>
+                    <button class="bg-orange-500 text-white px-5 py-1 rounded hover:bg-orange-600 transition">
+                        Buy Now
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SHOWCASE -->
+    <section class="bg-white p-8 rounded-lg shadow grid md:grid-cols-2 gap-6">
+
+        <!-- Product Image Gallery -->
+        <div class="space-y-4">
+
+            <!-- Main Product Image -->
+            <img
+                    src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=800&q=80"
+                    alt="Smartphone main image"
+                    class="w-full h-56 object-cover rounded">
+
+            <!-- Gallery Images -->
+            <div class="grid grid-cols-4 gap-2">
+
+                <img src="https://images.unsplash.com/photo-1766639214308-759e9993574d?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                     class="h-16 w-full object-cover rounded" alt="phone image 1">
+
+                <img src="https://images.unsplash.com/photo-1580846841980-225e3e2832ae?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                     class="h-16 w-full object-cover rounded">
+
+                <img src="https://images.unsplash.com/photo-1566554738544-d962991c3fee?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                     class="h-16 w-full object-cover rounded">
+
+                <img src="https://images.unsplash.com/photo-1556656793-08538906a9f8?auto=format&fit=crop&w=200&q=80"
+                     class="h-16 w-full object-cover rounded" alt="phone image 3">
+
+                <img src="https://images.unsplash.com/photo-1596207891316-23851be3cc20?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                     class="h-16 w-full object-cover rounded" alt="phone image 5">
+
+                <img src="https://images.unsplash.com/photo-1574944985070-8f3ebc6b79d2?auto=format&fit=crop&w=200&q=80"
+                     class="h-16 w-full object-cover rounded" alt="phone image 7">
+
+                <img src="https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?auto=format&fit=crop&w=200&q=80"
+                     class="h-16 w-full object-cover rounded" alt="phone image 8">
+
+                <img src="https://images.unsplash.com/photo-1606813907291-d86efa9b94db?auto=format&fit=crop&w=200&q=80"
+                     class="h-16 w-full object-cover rounded">
+
+            </div>
+
+        </div>
+
+        <!-- Product Details -->
+        <aside class="space-y-4 text-center flex flex-col justify-center">
+
+            <div class="text-2xl font-bold">
+                $99.99 <span class="line-through text-gray-400 text-lg">$149.99</span>
+            </div>
+
+            <p class="text-black">
+                Experience premium performance with this modern smartphone bundle,
+                including fast charging accessories and sleek protective gear designed
+                for everyday convenience.
+            </p>
+
+            <div class="flex items-center justify-center space-x-2">
+                <label>Qty:</label>
+                <input type="number" value="1" class="w-16 border rounded px-2 py-1"/>
+            </div>
+
+            <button class="bg-orange-500 text-white px-6 py-2 rounded hover:bg-orange-600 transition">
+                Buy Now
+            </button>
+
+        </aside>
+
+    </section>
+
+    <!-- REVIEWS -->
+    <section class="bg-white p-8 rounded-lg shadow">
+        <h2 class="text-2xl font-semibold mb-6 text-center">Customer Reviews</h2>
+
+        <div class="grid md:grid-cols-3 gap-6">
+
+            <!-- Review 1 -->
+            <div class="bg-gray-100 p-6 rounded text-center space-y-3">
+                <img
+                        src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=200"
+                        alt="Happy customer review 1"
+                        class="h-12 w-12 mx-auto rounded-full object-cover">
+                <div class="text-orange-500 text-lg">⭐⭐⭐⭐⭐</div>
+                <p class="text-sm text-gray-700">Absolutely love my new accessories — the quality is outstanding and worth every penny!</p>
+            </div>
+
+            <!-- Review 2 -->
+            <div class="bg-gray-100 p-6 rounded text-center space-y-3">
+                <img
+                        src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=200"
+                        alt="Happy customer review 2"
+                        class="h-12 w-12 mx-auto rounded-full object-cover">
+                <div class="text-orange-500 text-lg">⭐⭐⭐⭐</div>
+                <p class="text-sm text-gray-700">Great product and fast delivery — highly recommended to friends and family.</p>
+            </div>
+
+            <!-- Review 3 -->
+            <div class="bg-gray-100 p-6 rounded text-center space-y-3">
+                <img
+                        src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=200"
+                        alt="Happy customer review 3"
+                        class="h-12 w-12 mx-auto rounded-full object-cover">
+                <div class="text-orange-500 text-lg">⭐⭐⭐⭐⭐</div>
+                <p class="text-sm text-gray-700">Excellent customer service and the product quality exceeded my expectations!</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="bg-gray-200 p-8 rounded-lg grid md:grid-cols-2 gap-6 items-center">
+
+        <!-- Feature Image -->
+        <div>
+            <img
+                    src="https://img.freepik.com/free-photo/modern-smartphone-with-accessories_23-2148683781.jpg?w=826"
+                    alt="Smartphone accessories"
+                    class="w-full h-56 object-contain rounded-lg shadow">
+        </div>
+
+        <!-- CTA Content -->
+        <div class="space-y-4 text-center md:text-left">
+
+            <h2 class="text-xl font-semibold">
+                Don’t Miss Out on Our Best Deals!
+            </h2>
+
+            <p class="text-gray-600">
+                Discover premium mobile accessories designed to improve your everyday
+                smartphone experience. From fast chargers and power banks to stylish
+                cases and wireless earbuds, our products combine quality, durability,
+                and modern design.
+            </p>
+
+            <p class="text-gray-600">
+                Upgrade your mobile setup today and enjoy exclusive discounts on our
+                best-selling accessories while supplies last.
+            </p>
+
+            <button class="bg-orange-500 text-white px-6 py-2 rounded hover:bg-orange-600 transition">
+                Shop Now
+            </button>
+
+        </div>
+
+    </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="bg-cyan-800 mt-12 shadow text-white">
+    <div class="max-w-7xl mx-auto p-8 grid gap-8 md:grid-cols-4">
+
+        <!-- Column 1 -->
+        <div class="space-y-3">
+            <h3 class="font-semibold text-lg">Company</h3>
+            <a href="#" class="block hover:text-orange-400">About</a>
+            <a href="#" class="block hover:text-orange-400">Privacy</a>
+            <a href="#" class="block hover:text-orange-400">Terms</a>
+            <a href="#" class="block hover:text-orange-400">Contact</a>
+        </div>
+
+        <!-- Column 2 -->
+        <div class="space-y-3">
+            <h3 class="font-semibold text-lg">Follow Us</h3>
+            <div class="flex space-x-3">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" class="h-6 w-6">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" class="h-6 w-6">
+                <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" class="h-6 w-6">
+            </div>
+        </div>
+
+        <!-- Column 3 -->
+        <div class="space-y-3">
+            <h3 class="font-semibold text-lg">Newsletter</h3>
+            <input type="email" placeholder="Email Address"
+                   class="border rounded px-4 py-2 w-full text-black">
+            <button class="bg-orange-500 px-4 py-2 rounded hover:bg-orange-600">
+                Subscribe
+            </button>
+        </div>
+
+        <!-- Column 4 -->
+        <div class="space-y-3">
+            <h3 class="font-semibold text-lg">Your Account</h3>
+            <a href="#" class="block hover:text-orange-400">Cart</a>
+            <a href="#" class="block hover:text-orange-400">Wish List</a>
+            <a href="#" class="block hover:text-orange-400">Orders</a>
+            <a href="#" class="block hover:text-orange-400">Order Tracking</a>
+        </div>
+
+    </div>
+
+    <div class="text-center text-sm text-gray-400 pb-6">
+        © 2026 Your Company
+    </div>
+</footer>
+
+</body>
+</html>
